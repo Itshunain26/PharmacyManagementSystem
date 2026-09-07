@@ -1,5 +1,5 @@
-# Pharmacy Management System - Version 1.1
-# Feature: display medicine list, find medicine function
+# Pharmacy Management System - Version 2.0
+# Feature: display medicine list, find medicine function, add medicine function
 
 meds = ["Paracetamol", "Crocin", "Dolo"]
 
@@ -16,3 +16,11 @@ def findmed():
     print("Not Found")
 
 findmed()
+
+def addmed():
+  newmed = input("Enter new medicine name : ")
+  meds.append(newmed)
+  for i in meds:
+    print(i)
+
+addmed()
